@@ -1,0 +1,172 @@
+.header {
+  max-width: 1120px;
+  margin: 0 auto;
+  // .header__buttons
+
+  &__buttons {
+  }
+
+  // .header__buttons-list
+
+  &__buttons-list {
+    background-color: #fff;
+    height: 88px;
+    @media (min-width: 1120px){
+      background-color: #f8f8f8;
+      height: 43px;
+    }
+  }
+
+  // .header__button
+
+  &__button {
+    margin-right: 16px;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  // .header__button--line-right
+
+  &__button--line-right {
+    margin: 0;
+    
+    @media (min-width: 768px){
+    padding-right: 16px;
+    border-right: 2px solid #eaeaea;
+    }
+  }
+
+  // .header__slider
+
+  &__slider {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .header__button--laybl
+
+  &__button--laybl {
+    margin: 0 20px;
+  }
+
+  // .header__sub-buttons
+
+  &__sub-buttons {
+    display: inline-flex;
+  }
+
+
+
+  // .header__button--repair
+
+  &__button--repair {
+    padding-left: 20px;
+    border-left: 2px solid #eaeaea;
+    @media (min-width: 1120px){
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      border-left: 2px solid transparent;
+      &::before{
+        content: "Оставить заявку";
+        padding: 0 10px;
+      }
+    }
+  }
+
+  // .header__button--check
+
+  &__button--check {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    @media (min-width: 1120px){
+      &::before{
+      content: "Статус ремонта";
+      padding: 0 10px;
+    }
+    }
+    
+  }
+
+  // .header__title
+
+  &__title {
+    position: relative;
+    font-family: "TTLakes-Bold";
+    display: flex;
+    align-items: center;
+    &::before{
+      content: "";
+      height: 45px;
+      width: 4px;
+      margin-right: 10px;
+      background-color: #41f6d7;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+  }
+
+  // .header__nav
+
+  &__nav {
+    overflow: scroll;
+    &::-webkit-scrollbar{
+      width: 0;
+      height: 0;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    font-family: "TTLakes-Medium";
+    margin: 15px;
+    width: 1100px;
+    display: flex;
+  }
+
+  // .header__menu-item
+
+  &__menu-item {
+    color: #7e7e82;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background: #f8f8f8;
+    transition: all 0.3s;
+    &:hover,&:active,&:focus{
+      border: 2px solid #b8ffec;
+      background: #ffffff;
+    }
+  }
+}
+.header--flex {
+  display: flex;
+  align-items: center;
+}
+.header--float-right {
+  @media (min-width: 1120px){
+    float: right;
+  }
+}
+.header--none {
+  @media (min-width: 1120px){
+    display: none;
+  }
+}
+.header--overflow {
+  overflow: scroll;
+  display: flex;
+  width: 100%;
+  &::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+}
+.laybl {
+}

@@ -38,11 +38,14 @@ $itemFocus: #41f6d7;
   font-weight: normal;
   font-style: normal;
 }
-@import "./normalize.scss";
+@import "./normalize";
+@import "./myNull";
+@import "./header";
 
 body {
-  padding: 1rem;
+  // padding: 1rem;
   margin: 0;
   font-family: TTLakes-Bold;
   background-color: $bgColor;
+  color: $textBlack;
 }
