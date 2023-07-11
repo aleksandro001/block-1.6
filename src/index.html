@@ -11,113 +11,186 @@
     <link rel="shortcut icon" href="img/repair.svg" type="image/svg" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header__buttons">
-        <ul class="header__buttons-list header--flex header--float-right">
-          <li
-            class="header__button header__button--line-right header--none"
-            title="Меню"
-          >
-            <button type="button">
-              <img src="img/burger.svg" alt="burger menu" />
-            </button>
-          </li>
-          <li class="header--overflow">
-            <ul class="header__slider header--none">
-              <li
-                class="header__button header__button--laybl"
-                title="GPS laybl"
-              >
-                <button type="button">
-                  <img src="img/laybl.svg" alt="GPS  laybl" />
-                </button>
-              </li>
-              <ul class="header__sub-buttons">
-                <li class="header__button" title="Телефон">
-                  <button type="button">
-                    <img src="img/call.svg" alt="call" />
-                  </button>
-                </li>
-                <li class="header__button" title="Связаться">
-                  <button type="button">
-                    <img src="img/chat.svg" alt="chat" />
-                  </button>
-                </li>
-
-                <li class="header__button" title="Профиль">
-                  <button type="button">
-                    <img src="img/profile.svg" alt="profile" />
-                  </button>
-                </li>
-              </ul>
-            </ul>
-          </li>
-
-          <li
-            class="header__button header__button--repair"
-            title="Оставить заявку"
-          >
-            <button type="button">
-              <img src="img/repair.svg" alt="repair" />
-            </button>
-          </li>
-          <li
-            class="header__button header__button--check"
-            title="Статус ремонта"
-          >
-            <button type="button">
-              <img src="img/checkstatus.svg" alt="checkstatus" />
-            </button>
-          </li>
-        </ul>
-        <h1 class="header__title">Услуги и сервисы</h1>
-        <nav class="header__nav">
-          <ul class="header__menu">
-            <li
-              ><a class="header__menu-item" href="#"
-                >Ремонтируемые бренды</a
-              ></li
-            >
-            <li
-              ><a class="header__menu-item" href="#"
-                >Ремонтируемые устрой</a
-              ></li
-            >
-            <li><a class="header__menu-item" href="#">Цены на услуги</a></li>
-            <li
-              ><a class="header__menu-item" href="#"
-                >Адреса сервисных центров</a
-              ></li
-            >
-            <li><a class="header__menu-item" href="#">Специальные цены</a></li>
+  <body class="">
+    <div class="burger burger--position">
+      <div class="burger__top">
+        <div class="burger__header burger__header--position">
+          <button
+            type="button"
+            class="burger__button-cross burger__button--grayscale "
+            title="menu cross"
+          ></button>
+          <img
+            src="img/Group.svg"
+            alt="CPS laybl"
+            title="CPS laybl"
+          />
+          <button
+            type="button"
+            class="burger__button--search burger__button--grayscale"
+            title="search"
+          ></button>
+        </div>
+        <div class="burger__menu">
+          <ul class="burger__list burger__list--position">
+            <li><a class="burger__item" href="#">Ремонт техники</a></li>
+            <li><a class="burger__item" href="#">Услуги и сервисы</a></li>
+            <li>
+              <a class="burger__item" href="#">Корпоративным клиентам</a>
+            </li>
+            <li><a class="burger__item" href="#">Продавцам техники</a></li>
+            <li><a class="burger__item" href="#">Партнерам</a></li>
+            <li><a class="burger__item" href="#">Производителям</a></li>
+            <li>
+              <a class="burger__item" href="#">Наши сервисные центры</a>
+            </li>
+            <li><a class="burger__item" href="#">Контакты</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-    <main>
-      <section class="wrapper">
-        <div class="description">
-          <a href="#" class=" description__title header__menu-item">Отзывы</a>
-          <div class=" description__content">
-            <div class=" description__text-wrap">
-              <p class=" description__text ">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.<br /><br />
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                и, в свою очередь, советуют нас родным и близким.
-              </p>
-              <button class=" description__button" type="button">Читать далее</button>
-            </div>
-            <div class="description__img">
-              <img src="img/GPS-board.png" alt="CPS board" />
+
+      <div class="burger__footer burger__footer--position">
+        <div class="burger__buttons">
+          <button
+            type="button"
+            class="burger__button-tel burger__button--position burger__button--grayscale"
+          ></button>
+          <button
+            type="button"
+            class="burger__button-chat burger__button--position burger__button--grayscale"
+          ></button>
+          <button
+            type="button"
+            class="burger__button-profile burger__button--position burger__button--grayscale"
+          ></button>
+        </div>
+        <a class="burger__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a href="tel:88008908900" class="burger__phone">8 800 890 8900</a>
+        <div class="burger__lang">
+          <button
+            type="button"
+            class="burger__button-lang burger__button-lang--activ"
+          >
+            ru
+          </button>
+          <button type="button" class="burger__button-lang">en</button>
+          <button type="button" class="burger__button-lang">ch</button>
+        </div>
+      </div>
+    </div>
+    <section class="wrap">
+      <header class="header">
+        <div class="header__buttons">
+          <ul class="header__buttons-list header--flex header--float-right">
+            <li
+              class="header__button header__button--line-right header--none"
+              title="Меню"
+            >
+              <button type="button" class="burger__toggle">
+                <img src="img/burger.svg" alt="burger menu" />
+              </button>
+            </li>
+            <li class="header--overflow">
+              <ul class="header__slider header--none">
+                <li
+                  class="header__button header__button--laybl"
+                  title="GPS laybl"
+                >
+                  <button type="button">
+                    <img src="img/laybl.svg" alt="GPS  laybl" />
+                  </button>
+                </li>
+                <ul class="header__sub-buttons">
+                  <li class="header__button" title="Телефон">
+                    <button type="button">
+                      <img src="img/call.svg" alt="call" />
+                    </button>
+                  </li>
+                  <li class="header__button" title="Связаться">
+                    <button type="button">
+                      <img src="img/chat.svg" alt="chat" />
+                    </button>
+                  </li>
+
+                  <li class="header__button" title="Профиль">
+                    <button type="button">
+                      <img src="img/profile.svg" alt="profile" />
+                    </button>
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li
+              class="header__button header__button--repair"
+              title="Оставить заявку"
+            >
+              <button type="button">
+                <img src="img/repair.svg" alt="repair" />
+              </button>
+            </li>
+            <li
+              class="header__button header__button--check"
+              title="Статус ремонта"
+            >
+              <button type="button">
+                <img src="img/checkstatus.svg" alt="checkstatus" />
+              </button>
+            </li>
+          </ul>
+          <h1 class="header__title">Услуги и сервисы</h1>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li
+                ><a class="header__menu-item" href="#"
+                  >Ремонтируемые бренды</a
+                ></li
+              >
+              <li
+                ><a class="header__menu-item" href="#"
+                  >Ремонтируемые устрой</a
+                ></li
+              >
+              <li><a class="header__menu-item" href="#">Цены на услуги</a></li>
+              <li
+                ><a class="header__menu-item" href="#"
+                  >Адреса сервисных центров</a
+                ></li
+              >
+              <li
+                ><a class="header__menu-item" href="#">Специальные цены</a></li
+              >
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="wrapper">
+          <div class="description">
+            <a href="#" class="description__title header__menu-item">Отзывы</a>
+            <div class="description__content">
+              <div class="description__text-wrap">
+                <p class="description__text">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.<br /><br />
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким.
+                </p>
+                <button class="description__button" type="button"
+                  >Читать далее</button
+                >
+              </div>
+              <div class="description__img">
+                <img src="img/GPS-board.png" alt="CPS board" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </section>
   </body>
 </html>
