@@ -1,5 +1,5 @@
 .header {
-  max-width: 1120px;
+  max-width: 1360px;
   margin: 0 auto;
   // .header__buttons
 
@@ -11,8 +11,8 @@
   &__buttons-list {
     background-color: #fff;
     height: 88px;
-    @media (min-width: 1120px){
-      background-color: #f8f8f8;
+    @media (min-width: 1360px){
+      background-color: $bgColor;
       height: 43px;
     }
   }
@@ -64,8 +64,8 @@
 
   &__button--repair {
     padding-left: 20px;
-    border-left: 2px solid #eaeaea;
-    @media (min-width: 1120px){
+    border-left: 2px solid $formColor;
+    @media (min-width: 1360px){
       white-space: nowrap;
       display: flex;
       align-items: center;
@@ -84,7 +84,7 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
-    @media (min-width: 1120px){
+    @media (min-width: 1360px){
       &::before{
       content: "Статус ремонта";
       padding: 0 10px;
@@ -150,12 +150,12 @@
   align-items: center;
 }
 .header--float-right {
-  @media (min-width: 1120px){
+  @media (min-width: 1360px){
     float: right;
   }
 }
 .header--none {
-  @media (min-width: 1120px){
+  @media (min-width: 1360px){
     display: none;
   }
 }
