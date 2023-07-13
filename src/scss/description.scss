@@ -56,10 +56,11 @@
   // .description__img
 
   &__img {
-    padding-left: 10px;
+    padding-left: 0px;
 
     @media (min-width: 768px){
       flex: 0 1 49%;
+      padding-left: 10px;
     }
   }
   &__img img {
