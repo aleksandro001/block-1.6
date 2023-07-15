@@ -28,7 +28,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 10px 24px;
+    @media(min-height: 810px){
+      padding: 24px;
+    }
   }
 
   // .burger__bottom-cross
@@ -86,8 +89,8 @@
   // .burger__item
 
   &__item {
-    padding: 10px 0;
-    margin: 10px 0;
+    padding:8px 0;
+    margin:  0;
     display: flex;
     align-items: center;
     color: #1b1c21;
@@ -105,6 +108,10 @@
     }
     &:last-child {
       margin-bottom: 0;
+    }
+    @media(min-height: 810px){
+      // padding: 10px 0;
+    margin: 10px 0;
     }
   }
   &__item:active,

@@ -11,7 +11,7 @@
   &__buttons-list {
     background-color: $buttonColor;
     height: 88px;
-    @media (min-width: 1360px){
+    @media (min-width: 1360px) {
       background-color: $bgColor;
       height: 43px;
     }
@@ -21,7 +21,7 @@
 
   &__button {
     margin-right: 16px;
-    &:last-child{
+    &:last-child {
       margin-right: 0px;
     }
   }
@@ -30,10 +30,10 @@
 
   &__button--line-right {
     margin: 0;
-    
-    @media (min-width: 768px){
-    padding-right: 16px;
-    border-right: 2px solid $formColor;
+
+    @media (min-width: 768px) {
+      padding-right: 16px;
+      border-right: 2px solid $formColor;
     }
   }
 
@@ -55,54 +55,53 @@
   // .header__sub-buttons
 
   &__sub-buttons {
-    display: inline-flex;
+    display: none;
+    @media (min-width: 520px) {
+      display: inline-flex;
+    }
   }
-
-
 
   // .header__button--repair
 
-  &__button--repair button{
+  &__button--repair button {
     padding-left: 20px;
     border-left: 2px solid $formColor;
-    @media (min-width: 1360px){
+    @media (min-width: 1360px) {
       white-space: nowrap;
       display: flex;
       align-items: center;
       padding: 0;
       border-left: 2px solid transparent;
-      &::before{
-        content: "Оставить заявку";
+      &::before {
+        content: 'Оставить заявку';
         padding: 0 10px;
       }
     }
   }
 
-
   // .header__button--check
 
-  &__button--check button{
+  &__button--check button {
     white-space: nowrap;
     display: flex;
     align-items: center;
-    @media (min-width: 1360px){
-      &::before{
-      content: "Статус ремонта";
-      padding: 0 10px;
+    @media (min-width: 1360px) {
+      &::before {
+        content: 'Статус ремонта';
+        padding: 0 10px;
+      }
     }
-    }
-    
   }
 
   // .header__title
 
   &__title {
     position: relative;
-    font-family: "TTLakes-Bold";
+    font-family: 'TTLakes-Bold';
     display: flex;
     align-items: center;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       height: 45px;
       width: 4px;
       margin-right: 10px;
@@ -116,7 +115,7 @@
 
   &__nav {
     overflow: scroll;
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
       width: 0;
       height: 0;
     }
@@ -125,7 +124,7 @@
   // .header__menu
 
   &__menu {
-    font-family: "TTLakes-Medium";
+    font-family: 'TTLakes-Medium';
     margin: 15px;
     width: 1100px;
     display: flex;
@@ -140,7 +139,9 @@
     border-radius: 6px;
     background: $bgColor;
     transition: all 0.3s;
-    &:hover,&:active,&:focus{
+    &:hover,
+    &:active,
+    &:focus {
       border: 2px solid $itemFocus;
       background: $buttonColor;
     }
@@ -151,12 +152,12 @@
   align-items: center;
 }
 .header--float-right {
-  @media (min-width: 1360px){
+  @media (min-width: 1360px) {
     float: right;
   }
 }
 .header--none {
-  @media (min-width: 1360px){
+  @media (min-width: 1360px) {
     display: none;
   }
 }
@@ -164,9 +165,8 @@
   overflow: scroll;
   display: flex;
   width: 100%;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
 }
-

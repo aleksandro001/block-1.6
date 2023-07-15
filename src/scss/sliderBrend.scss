@@ -1,7 +1,7 @@
-.swiper {
+.swiper-brend {
   margin: 40px 0;
 }
-.swiper-wrapper {
+.swiper-brend__wrapper {
   height: 142px;
   align-items: center;
   @media (min-width: 768px) {
@@ -19,7 +19,7 @@
   font-size: 16px;
   margin-left: 10px;
 }
-.swiper-slide {
+.swiper-brend__slide {
   padding: 10px;
   margin: 10px;
   background-color: $buttonColor;
@@ -35,12 +35,12 @@
     }
   }
 }
-.swiper-pagination {
+.swiper-brend__pagination {
   @media (min-width: 768px) {
     display: none;
   }
 }
-.swiper__show{
+.swiper-brend__show{
   display: none;
   color: #1b1c21;
   font-size: 16px;
@@ -55,6 +55,6 @@
     display: flex;
   }
 }
-.click.swiper__show::before{
+.click.swiper-brend__show::before{
 transform: rotate(180deg);
 }
