@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="widp=device-widp, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -13,6 +13,16 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body class="">
+    <form  class="feedback">
+      <button type="button" class=" feedback__button-cross"></button>
+      <h3 class="feedback__title">Обратная связь</h3>
+      <input name="name" type="text" placeholder="Имя">
+      <input name="tel" type="tel" placeholder="Телефон">
+      <input name="email" type="email" placeholder="Электронная почта">
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+      <p class="feedback__description">Нажимая “отправить”, вы даете согласие на<span> обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+      <button class="feedback__btn swiper-service__btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
     <div class="burger burger--position">
       <div class="burger__top">
         <div class="burger__header burger__header--position">
@@ -103,7 +113,7 @@
                       <img src="img/call.svg" alt="call" />
                     </button>
                   </li>
-                  <li class="header__button" title="Связаться">
+                  <li id="ligaments" class="header__button" title="Связаться">
                     <button type="button">
                       <img src="img/chat.svg" alt="chat" />
                     </button>
@@ -281,64 +291,80 @@
         <section>
           <div class="swiper swiper-service">
             <h2 class="swiper__title">цены на услуги</h2>
-            <table class="swiper-wrapper swiper-service__wrapper">
-              <tr class="swiper-slide swiper-service__slide">
-                <th>Ремонтные услуги</th>
-                <th>Цена</th>
-                <th>Срок</th>
-                <th></th>
-              </tr>
-              <tr class="swiper-slide swiper-service__slide">
-                <td>Диагностика</td>
-                <td>Бесплатно</td>
-                <td>30 мин</td>
-                <td
-                  ><button class="swiper-service__btn" type="button"
+            <ul class="swiper-wrapper swiper-service__wrapper">
+              <li
+                class="swiper-slide swiper-service__slide swiper-service__slide--table"
+              >
+                <p>Ремонтные услуги</p>
+                <p>Цена</p>
+                <p>Срок</p>
+              </li>
+              <li class="swiper-slide swiper-service__slide">
+                <span>Ремонтные услуги</span>
+                <p>Диагностика</p>
+                <span>Цена</span>
+                <p>Бесплатно</p>
+                <span>Срок</span>
+                <p class="display-flex"
+                  >30 мин
+                  <button class="swiper-service__btn" type="button"
                     >Заказать</button
-                  ></td
-                >
-              </tr>
-              <tr class="swiper-slide swiper-service__slide">
-                <td>Замена дисплея</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td
-                  ><button class="swiper-service__btn" type="button"
+                  >
+                </p>
+              </li>
+              <li class="swiper-slide swiper-service__slide">
+                <span>Ремонтные услуги</span>
+                <p>Замена дисплея</p>
+                <span>Цена</span>
+                <p>1 000 ₽</p>
+                <span>Срок</span>
+                <p class="display-flex"
+                  >30-120 мин
+                  <button class="swiper-service__btn" type="button"
                     >Заказать</button
-                  ></td
-                >
-              </tr>
-              <tr class="swiper-slide swiper-service__slide">
-                <td>Замена полифонического динамика</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td
-                  ><button class="swiper-service__btn" type="button"
+                  >
+                </p>
+              </li>
+              <li class="swiper-slide swiper-service__slide">
+                <span>Ремонтные услуги</span>
+                <p>Замена полифонического динамика</p>
+                <span>Цена</span>
+                <p>1 000 ₽</p>
+                <span>Срок</span>
+                <p class="display-flex"
+                  >30-120 мин
+                  <button class="swiper-service__btn" type="button"
                     >Заказать</button
-                  ></td
-                >
-              </tr>
-              <tr class="swiper-slide swiper-service__slide">
-                <td>Тестирование с выдачей технического заключения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td
-                  ><button class="swiper-service__btn" type="button"
+                  >
+                </p>
+              </li>
+              <li class="swiper-slide swiper-service__slide">
+                <span>Ремонтные услуги</span>
+                <p>Тестирование с выдачей технического заключения</p>
+                <span>Цена</span>
+                <p>1 000 ₽</p>
+                <span>Срок</span>
+                <p class="display-flex"
+                  >30-120 мин
+                  <button class="swiper-service__btn" type="button"
                     >Заказать</button
-                  ></td
-                >
-              </tr>
-              <tr class="swiper-slide swiper-service__slide">
-                <td>Замена программного обеспечения</td>
-                <td>1 000 ₽</td>
-                <td>30-120 мин</td>
-                <td
-                  ><button class="swiper-service__btn" type="button"
+                  >
+                </p>
+              </li>
+              <li class="swiper-slide swiper-service__slide">
+                <span>Ремонтные услуги</span>
+                <p>Замена программного обеспечения</p>
+                <span>Цена</span>
+                <p>1 000 ₽</p>
+                <span>Срок</span>
+                <p class="display-flex"
+                  >30-120 мин
+                  <button class="swiper-service__btn" type="button"
                     >Заказать</button
-                  ></td
-                >
-              </tr>
-            </table>
+                  >
+                </p>
+              </li>
+            </ul>
             <div class="swiper-pagination swiper-service__pagination"></div>
           </div>
           <div class="swiper-service__text"
@@ -346,9 +372,16 @@
             единичную услугу. Для получения коммерческого предложения на
             постоянное обслуживание, оставьте заявку.</div
           >
-          <button type="button" class="swiper-service__get">Получить коммерческое предложение</button>
+          <button type="button" class="swiper-service__get"
+            >Получить коммерческое предложение</button
+          >
         </section>
       </main>
+      <footer class="footer">
+        <p>© 2019 CPS Разработано командой Apesong</p>
+        <p>Политика конфиденциальности</p>
+        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+      </footer>
     </section>
   </body>
 </html>

@@ -1,0 +1,13 @@
+.footer{
+  color: $textLite;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  @media(min-width: 768px){
+    flex-direction:row;
+    & p {
+    flex-basis: 33.3333%;
+  }
+  }
+}

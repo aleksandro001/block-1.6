@@ -8,27 +8,83 @@
   // .swiper-service__wrapper
 
   &__wrapper {
-    display: block;
+    // display: block;
+    height: 260px;
+    @media (min-width: 768px) {
+      height: 100%;
+      display: block;
+    }
   }
 
   // .swiper-service__slide
 
   &__slide {
-    display: table-row;
-    & th {
-      color: $textLite;
-      font-weight: 100;
-      padding: 10px 0;
+    & p {
+      margin: 5px 0px 10px 0px;
     }
-    & td {
-      color: $textBlack;
-      background-color: $bgIconColor;
-      padding: 15px 5px;
+
+    & p:nth-child(2) {
+      @media (min-width: 768px) {
+        flex-basis: 55%;
+        // color: red;
+      }
+    }
+    & p:nth-child(4) {
+      @media (min-width: 768px) {
+        // color: green;
+        flex-basis: 15%;
+      }
+    }
+    & p:nth-child(6) {
+      @media (min-width: 768px) {
+        // color: blue;
+        flex-basis: 30%;
+      }
+    }
+
+    height: 180px;
+    @media (min-width: 768px) {
+      display: flex;
+      height: auto;
+      align-items: center;
+      margin: 0px;
+      border-bottom: 1px solid $formColor;
+    }
+    &:last-child{
+      border-bottom: none;
+    }
+    background-color: $bgIconColor;
+    margin: 10px;
+    border: 10px solid $bgIconColor;
+    & span {
+      color: $textLite;
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
-  &__text{
+  &__slide--table {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      background-color: transparent;
+      padding: 10px;
+      border: none;
+      & p:nth-child(1){
+        flex-basis: 55%;
+      }
+      & p:nth-child(2){
+        flex-basis: 15%;
+      }
+      & p:nth-child(3){
+        flex-basis: 30%;
+      }
+    }
+  }
+  &__text {
     max-width: 430px;
-    margin: 32px;
+    margin: 10px;
   }
   &__get {
     // margin-left: 32px;
@@ -59,11 +115,17 @@
   color: $buttonColor;
   font-size: 12px;
   text-transform: uppercase;
+  margin-right: 20px;
   &::after {
     content: url(../img/dropdown.svg);
   }
 }
-
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
 .swiper-wrapper {
 }
 .swiper-slide {

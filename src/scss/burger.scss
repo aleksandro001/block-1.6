@@ -1,4 +1,5 @@
 .burger {
+  // position: fixed;
   min-width: 320px;
   color: #1b1c21;
   background: #ffffff;
@@ -212,6 +213,7 @@
   }
 }
 .burger--position {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -18,6 +18,8 @@ $itemFocus: #41f6d7;
 @import "./sliderBrend";
 @import "./sliderTechniqe";
 @import "./sliderServise";
+@import "./footer";
+@import "./formFeedback";
 
 body {
   // padding: 1rem;
@@ -33,6 +35,7 @@ body {
 .wrap{
   // padding-left: 320px;
   transition: padding .3s;
+  margin: 10px;
   &.block{
     position: relative;
     z-index: 1;
