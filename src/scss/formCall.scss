@@ -1,0 +1,38 @@
+.call{
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  width: 280px;
+  height: 940px;
+  padding: 20px;
+  position: absolute;  
+  right: 0px;
+  background-color: $bgIconColor;
+  transform: translateX(500px);
+  visibility: hidden;
+  transition: all .3s ;
+  &.click{
+    transform: translateX(0px);
+    visibility: visible;
+    position: fixed;
+  }
+  & input {
+    margin-bottom: 20px;
+  }
+  & span {
+    color: $textImportant;
+  }
+  @media(min-width: 768px){
+    width: 400px;
+  }
+  &__button-cross{
+    width: 40px;
+  height: 40px;
+  background-image: url('../img/burgerX.svg');
+  background-repeat: no-repeat;
+  // display: none;
+  @media(min-width: 768px){
+    transform: translate(-76px,53px);
+  }
+  }
+}

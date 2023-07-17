@@ -137,6 +137,10 @@ let ligaments = document.querySelector("#ligaments");
 let connect = document.querySelector(".feedback");
 let clockFeedback = document.querySelector(".feedback__button-cross");
 let burgerFeedback = document.querySelector(".burger__button-chat");
+let burgerCall = document.querySelector(".burger__button-tel");
+let call = document.querySelector(".call");
+let clockCall = document.querySelector(".call__button-cross");
+let headerButtonCall = document.querySelector(".header__button--call");
 
 ligaments.addEventListener("click", function(){
 connect.classList.toggle("click");
@@ -146,15 +150,30 @@ block.classList.toggle("block");
 burgerFeedback.addEventListener("click", function(){
   connect.classList.toggle("click");
   block.classList.add("block");
-  open.classList.toggle("active");
+  open.classList.remove("active");
+  open.classList.toggle("block");
   });
 
 clockFeedback.addEventListener("click", function(){
   connect.classList.toggle("click");
   block.classList.toggle("block");
+  open.classList.remove("block");
 });
-// burgerFeedback.addEventListener("click", function(){
-//   connect.classList.toggle("click");
-//   block.classList.toggle("block");
-// });
+  // ++++++++++++++++++++
+  headerButtonCall.addEventListener("click", function(){
+    connect.classList.toggle("click");
+block.classList.toggle("block");
+  })
+
+  burgerCall.addEventListener("click", function(){
+call.classList.toggle("click");
+block.classList.add("block");
+  open.classList.remove("active");
+  open.classList.toggle("block");
+  });
+  clockCall.addEventListener("click", function(){
+    call.classList.toggle("click");
+    block.classList.toggle("block");
+    open.classList.remove("block");
+  })
 //===========================================

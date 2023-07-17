@@ -20,6 +20,7 @@ $itemFocus: #41f6d7;
 @import "./sliderServise";
 @import "./footer";
 @import "./formFeedback";
+@import "./formCall";
 
 body {
   // padding: 1rem;
@@ -36,17 +37,19 @@ body {
   // padding-left: 320px;
   transition: padding .3s;
   margin: 10px;
-  &.block{
-    position: relative;
+  
+  @media(min-width: 1360px){
+    padding-left: 320px;
+  }
+}
+.block{
+    // position: relative;
     z-index: 1;
     opacity: .1;
     pointer-events: none;
     user-select: none;
   }
-  @media(min-width: 1360px){
-    padding-left: 320px;
-  }
-}
+
  .burger.active{
   transform: translateX(0px);
 }
