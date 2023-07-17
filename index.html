@@ -10,6 +10,13 @@
     <title>Ремонт техники</title>
   <link href="style.css" rel="stylesheet"></head>
   <body class="">
+    <form class="call">
+      <button type="button" class="call__button-cross"></button>
+      <h3 class="feedback__title">Заказать звонок</h3>
+      <input name="tel" type="tel" placeholder="Телефон">
+      <p class="feedback__description">Нажимая “отправить”, вы даете согласие на<span> обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
+      <button class="feedback__btn swiper-service__btn" type="submit">ОТПРАВИТЬ</button>
+    </form>
     <form class="feedback">
       <button type="button" class="feedback__button-cross"></button>
       <h3 class="feedback__title">Обратная связь</h3>
@@ -79,7 +86,7 @@
                   </button>
                 </li>
                 <ul class="header__sub-buttons">
-                  <li class="header__button" title="Телефон">
+                  <li class="header__button header__button--call" title="Телефон">
                     <button type="button">
                       <img src="img/call.svg" alt="call">
                     </button>
