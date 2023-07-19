@@ -142,10 +142,12 @@ let call = document.querySelector(".call");
 let clockCall = document.querySelector(".call__button-cross");
 let headerButtonCall = document.querySelector(".header__button--call");
 let focusCall = document.getElementById("focusCall");
+const focusFeedback = document.querySelector("#focusFeedback");
 
 ligaments.addEventListener("click", function(){
 connect.classList.toggle("click");
 block.classList.toggle("block");
+setTimeout(() => focusFeedback.focus(), 300);
 });
 
 burgerFeedback.addEventListener("click", function(){
@@ -153,6 +155,7 @@ burgerFeedback.addEventListener("click", function(){
   block.classList.add("block");
   open.classList.remove("active");
   open.classList.toggle("block");
+  setTimeout(() => focusFeedback.focus(), 300);
   });
 
 clockFeedback.addEventListener("click", function(){
@@ -161,23 +164,22 @@ clockFeedback.addEventListener("click", function(){
   open.classList.remove("block");
 });
   // ++++++++++++++++++++
-  headerButtonCall.addEventListener("click", function(){
+  headerButtonCall.addEventListener("click", () => {
     block.classList.toggle("block");
     call.classList.toggle("click");
-    focusCall.focus();
-    console.log(focusCall.focus());  // returns undefined
-    
-  })
+    setTimeout(() => focusCall.focus(), 300);
+  });
 
   burgerCall.addEventListener("click", function(){
-call.classList.toggle("click");
-block.classList.add("block");
+  call.classList.toggle("click");
+  block.classList.add("block");
   open.classList.remove("active");
   open.classList.toggle("block");
+  setTimeout(() => focusCall.focus(), 300);
   });
   clockCall.addEventListener("click", function(){
     call.classList.toggle("click");
     block.classList.toggle("block");
     open.classList.remove("block");
-  })
+  });
 //===========================================
