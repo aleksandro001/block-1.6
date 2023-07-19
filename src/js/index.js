@@ -141,6 +141,7 @@ let burgerCall = document.querySelector(".burger__button-tel");
 let call = document.querySelector(".call");
 let clockCall = document.querySelector(".call__button-cross");
 let headerButtonCall = document.querySelector(".header__button--call");
+let focusCall = document.getElementById("focusCall");
 
 ligaments.addEventListener("click", function(){
 connect.classList.toggle("click");
@@ -161,8 +162,11 @@ clockFeedback.addEventListener("click", function(){
 });
   // ++++++++++++++++++++
   headerButtonCall.addEventListener("click", function(){
-    connect.classList.toggle("click");
-block.classList.toggle("block");
+    block.classList.toggle("block");
+    call.classList.toggle("click");
+    focusCall.focus();
+    console.log(focusCall.focus());  // returns undefined
+    
   })
 
   burgerCall.addEventListener("click", function(){

@@ -8,48 +8,44 @@ $textBlack: #1b1c21;
 $textImportant: #ff3e79;
 $itemFocus: #41f6d7;
 
-
-@import "./normalize";
-@import "./fonts";
-@import "./myNull";
-@import "./header";
-@import "./burger";
-@import "./description";
-@import "./sliderBrend";
-@import "./sliderTechniqe";
-@import "./sliderServise";
-@import "./footer";
-@import "./formFeedback";
-@import "./formCall";
+@import './normalize';
+@import './fonts';
+@import './myNull';
+@import './header';
+@import './burger';
+@import './description';
+@import './sliderBrend';
+@import './sliderTechniqe';
+@import './sliderServise';
+@import './footer';
+@import './formFeedback';
+@import './formCall';
 
 body {
-  // padding: 1rem;
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
   font-family: TTLakes-Medium;
   background-color: $bgColor;
   color: $textBlack;
-  // display: flex;
+  overflow-x: hidden;
 }
 
-.wrap{
-  // padding-left: 320px;
-  transition: padding .3s;
-  margin: 10px;
-  
-  @media(min-width: 1360px){
+.wrap {
+  transition: padding 0.3s;
+
+  @media (min-width: 1360px) {
     padding-left: 320px;
   }
 }
-.block{
-    // position: relative;
-    z-index: 1;
-    opacity: .1;
-    pointer-events: none;
-    user-select: none;
-  }
 
- .burger.active{
+.block {
+  z-index: 1;
+  opacity: 0.1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.burger.active {
   transform: translateX(0px);
 }

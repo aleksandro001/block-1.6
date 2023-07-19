@@ -14,23 +14,43 @@
   </head>
   <body class="">
     <form class="call">
-      <button type="button" class=" call__button-cross "></button>
+      <button type="button" class="call__button-cross"></button>
       <h3 class="feedback__title">Заказать звонок</h3>
-      <input name="tel" type="tel" placeholder="Телефон">
-      <p class="feedback__description">Нажимая “отправить”, вы даете согласие на<span> обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
-      <button class="feedback__btn swiper-service__btn" type="submit">ОТПРАВИТЬ</button>
+      <input name="tel" type="tel" placeholder="   Телефон" id="focusCall" />
+      <p class="feedback__description"
+        >Нажимая “отправить”, вы даете согласие на<span>
+          обработку персональных данных</span
+        >
+        и соглашаетесь с нашей <span>политикой конфиденциальности</span></p
+      >
+      <button class="feedback__btn swiper-service__btn" type="submit"
+        >ОТПРАВИТЬ</button
+      >
     </form>
-    <form  class="feedback">
-      <button type="button" class=" feedback__button-cross"></button>
+    <form class="feedback">
+      <button type="button" class="feedback__button-cross"></button>
       <h3 class="feedback__title">Обратная связь</h3>
-      <input name="name" type="text" placeholder="Имя">
-      <input name="tel" type="tel" placeholder="Телефон">
-      <input name="email" type="email" placeholder="Электронная почта">
-      <textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-      <p class="feedback__description">Нажимая “отправить”, вы даете согласие на<span> обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p>
-      <button class="feedback__btn swiper-service__btn" type="submit">ОТПРАВИТЬ</button>
+      <input name="name" type="text" placeholder="   Имя" id="focusFeedback" />
+      <input name="tel" type="tel" placeholder="   Телефон" />
+      <input name="email" type="email" placeholder="   Электронная почта" />
+      <textarea
+        name="message"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="   Сообщение"
+      ></textarea>
+      <p class="feedback__description"
+        >Нажимая “отправить”, вы даете согласие на<span>
+          обработку персональных данных</span
+        >
+        и соглашаетесь с нашей <span>политикой конфиденциальности</span></p
+      >
+      <button class="feedback__btn swiper-service__btn" type="submit"
+        >ОТПРАВИТЬ</button
+      >
     </form>
-    <div class="burger burger--position">
+    <section class="burger burger--position">
       <div class="burger__top">
         <div class="burger__header burger__header--position">
           <button
@@ -91,10 +111,10 @@
           <button type="button" class="burger__button-lang">ch</button>
         </div>
       </div>
-    </div>
+    </section>
     <section class="wrap">
       <header class="header">
-        <div class="header__buttons">
+        <section class="header__buttons">
           <ul class="header__buttons-list header--flex header--float-right">
             <li
               class="header__button header__button--line-right header--none"
@@ -115,7 +135,10 @@
                   </button>
                 </li>
                 <ul class="header__sub-buttons">
-                  <li class="header__button header__button--call" title="Телефон">
+                  <li
+                    class="header__button header__button--call"
+                    title="Телефон"
+                  >
                     <button type="button">
                       <img src="img/call.svg" alt="call" />
                     </button>
@@ -174,16 +197,18 @@
               <li
                 ><a class="header__menu-item" href="#">Специальные цены</a></li
               >
+              <li
+              ><a class="header__menu-item header__menu-item--activ" href="#">Отзывы</a></li
+            >
             </ul>
           </nav>
-        </div>
+        </section>
       </header>
       <main>
         <section class="wrapper">
-          <div class="description">
-            <a href="#" class="description__title header__menu-item">Отзывы</a>
-            <div class="description__content">
-              <div class="description__text-wrap">
+          <section class="description">
+            <section class="description__content">
+              <section class="description__text-wrap">
                 <p class="description__text">
                   Мы являемся авторизованным сервисным центром по ремонту
                   техники Dell. Только у нас вы можете отремонтировать свой
@@ -197,15 +222,15 @@
                 <button class="description__button" type="button"
                   >Читать далее</button
                 >
-              </div>
-              <div class="description__img">
+              </section>
+              <section class="description__img">
                 <img src="img/GPS-board.png" alt="CPS board" />
-              </div>
-            </div>
-          </div>
+              </section>
+            </section>
+          </section>
         </section>
         <section>
-          <div class="swiper swiper-brend">
+          <section class="swiper swiper-brend">
             <h2 class="swiper__title">Ремонт техники различных брендов</h2>
             <ul class="swiper-wrapper swiper-brend__wrapper">
               <li class="swiper-slide swiper-brend__slide"
@@ -243,13 +268,13 @@
               ></li>
             </ul>
             <div class="swiper-pagination swiper-brend__pagination"></div>
-          </div>
+          </section>
           <button type="button" class="swiper__show swiper-brend__show"
             >Показать все</button
           >
         </section>
         <section>
-          <div class="swiper swiper-technique">
+          <section class="swiper swiper-technique">
             <h2 class="swiper__title">Ремонт различных видов техники</h2>
             <ul class="swiper-wrapper swiper-technique__wrapper">
               <li class="swiper-slide swiper-technique__slide"
@@ -290,13 +315,13 @@
               >
             </ul>
             <div class="swiper-pagination swiper-techniqe__pagination"></div>
-          </div>
+          </section>
           <button type="button" class="swiper__show swiper-technique__show"
             >Показать все</button
           >
         </section>
         <section>
-          <div class="swiper swiper-service">
+          <section class="swiper swiper-service">
             <h2 class="swiper__title">цены на услуги</h2>
             <ul class="swiper-wrapper swiper-service__wrapper">
               <li
@@ -373,11 +398,11 @@
               </li>
             </ul>
             <div class="swiper-pagination swiper-service__pagination"></div>
-          </div>
-          <div class="swiper-service__text"
+          </section>
+          <section class="swiper-service__text"
             >Все цены указаны с учетом НДС. Стоимость ремонта указана на
             единичную услугу. Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.</div
+            постоянное обслуживание, оставьте заявку.</section
           >
           <button type="button" class="swiper-service__get"
             >Получить коммерческое предложение</button
@@ -387,7 +412,10 @@
       <footer class="footer">
         <p>© 2019 CPS Разработано командой Apesong</p>
         <p>Политика конфиденциальности</p>
-        <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+        <p
+          >Информация, размещенная на данной странице, не является публичной
+          офертой</p
+        >
       </footer>
     </section>
   </body>

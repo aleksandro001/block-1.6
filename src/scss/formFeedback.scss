@@ -1,5 +1,4 @@
 .feedback {
-  
   display: flex;
   z-index: 2;
   flex-direction: column;
@@ -11,32 +10,39 @@
   background-color: $bgIconColor;
   transform: translateX(500px);
   visibility: hidden;
-  transition: all .3s ;
-  @media(min-width: 768px){
+  transition: all 0.3s;
+  @media (min-width: 768px) {
     width: 400px;
   }
   & input {
+    border-radius: 8px;
+    border: 1px solid $formColor;
+    background: $bgIconColor;
+    height: 48px;
     margin-bottom: 20px;
+  }
+  & textarea {
+    border-radius: 8px;
+    border: 1px solid $formColor;
+    background: $bgIconColor;
   }
   & span {
     color: $textImportant;
   }
-  // .feedback__title
-&.click{
-  transform: translateX(0px);
-  visibility: visible;
-  position: fixed;
-}
-&__button-cross{
-  width: 40px;
-  height: 40px;
-  background-image: url('../img/burgerX.svg');
-  background-repeat: no-repeat;
-  // display: none;
-  @media(min-width: 768px){
-    transform: translate(-76px,53px);
+  &.click {
+    transform: translateX(0px);
+    visibility: visible;
+    position: fixed;
   }
-}
+  &__button-cross {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/burgerX.svg');
+    background-repeat: no-repeat;
+    @media (min-width: 768px) {
+      transform: translate(-76px, 53px);
+    }
+  }
   &__title {
     display: flex;
     align-items: center;
@@ -53,15 +59,16 @@
     }
   }
 
-  // .feedback__description
-
   &__description {
+    color: $textLite;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
   }
 
-  // .feedback__btn
-
   &__btn {
-    align-self:flex-end;
+    align-self: flex-end;
     margin: 0;
   }
 }

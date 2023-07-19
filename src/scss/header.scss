@@ -1,12 +1,6 @@
 .header {
   max-width: 1360px;
   margin: 0 auto;
-  // .header__buttons
-
-  &__buttons {
-  }
-
-  // .header__buttons-list
 
   &__buttons-list {
     background-color: $buttonColor;
@@ -17,16 +11,12 @@
     }
   }
 
-  // .header__button
-
   &__button {
     margin-right: 16px;
     &:last-child {
       margin-right: 0px;
     }
   }
-
-  // .header__button--line-right
 
   &__button--line-right {
     margin: 0;
@@ -37,8 +27,6 @@
     }
   }
 
-  // .header__slider
-
   &__slider {
     min-width: 100%;
     display: flex;
@@ -46,13 +34,9 @@
     align-items: center;
   }
 
-  // .header__button--laybl
-
   &__button--laybl {
     margin: 0 20px;
   }
-
-  // .header__sub-buttons
 
   &__sub-buttons {
     display: none;
@@ -60,8 +44,6 @@
       display: inline-flex;
     }
   }
-
-  // .header__button--repair
 
   &__button--repair button {
     padding-left: 20px;
@@ -79,8 +61,6 @@
     }
   }
 
-  // .header__button--check
-
   &__button--check button {
     white-space: nowrap;
     display: flex;
@@ -93,13 +73,12 @@
     }
   }
 
-  // .header__title
-
   &__title {
     position: relative;
     font-family: 'TTLakes-Bold';
     display: flex;
     align-items: center;
+    margin: 0;
     &::before {
       content: '';
       height: 45px;
@@ -111,8 +90,6 @@
     }
   }
 
-  // .header__nav
-
   &__nav {
     overflow: scroll;
     &::-webkit-scrollbar {
@@ -121,16 +98,16 @@
     }
   }
 
-  // .header__menu
-
   &__menu {
     font-family: 'TTLakes-Medium';
     margin: 15px;
-    width: 1100px;
+    width: 1120px;
     display: flex;
+    position: relative;
+    @media(min-width: 768px){
+      margin: 15px 15px 50px 15px;
+    }
   }
-
-  // .header__menu-item
 
   &__menu-item {
     color: $textLite;
@@ -144,6 +121,13 @@
     &:focus {
       border: 2px solid $itemFocus;
       background: $buttonColor;
+    }
+  }
+  &__menu-item--activ {
+    @media (min-width: 768px) {
+      position: absolute;
+      left: 0;
+      top: 35px;
     }
   }
 }

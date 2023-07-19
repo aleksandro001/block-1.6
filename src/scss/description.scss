@@ -4,30 +4,18 @@
 }
 .description {
   margin: 0 15px;
-  // .description__title
 
-  &__title {
-    color: #7e7e82;
-    margin: 20px;
-    display: inline-block;
-  }
-
-  // .description__content
 
   &__content {
     display: flex;
     flex-wrap: wrap;
   }
 
-  // .description__text-wrap
-
   &__text-wrap {
     @media (min-width: 768px) {
       flex: 0 1 49%;
     }
   }
-
-  // .description__text
 
   &__text {
     font-family: 'TTLakes-Regular';
@@ -38,14 +26,15 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #1b1c21;
+    color: $textBlack;
   }
 
-  // .description__button
-
   &__button {
-    color: #1b1c21;
+    color: $textBlack;
     line-height: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     display: flex;
     margin: 20px;
     &::before {
@@ -53,12 +42,10 @@
     }
   }
 
-  // .description__img
-
   &__img {
     padding-left: 0px;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
       flex: 0 1 49%;
       padding-left: 10px;
     }
