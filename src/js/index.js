@@ -112,7 +112,8 @@ const swiper2 = new Swiper(".swiper-service", {
       width: 768,
     },
     768:{
-      slidesPerView: 1,
+      enabled: false,
+      slidesPerView: "auto",
       // width: null,
     },
   },
